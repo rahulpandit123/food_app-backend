@@ -14,6 +14,7 @@ const host = '0.0.0.0';
 // app.use("/user", signupController);
 // app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cors());
+app.options('*', cors());
 app.use(express.json());
 
 app.use(morgan('dev'))
